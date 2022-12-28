@@ -1,0 +1,596 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Passion+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500;900&display=swap");
+/* line 3, ../praca-goit/_scss/style.scss */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 93, ../praca-goit/_scss/style.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* line 107, ../praca-goit/_scss/style.scss */
+body {
+  line-height: 1;
+}
+
+/* line 112, ../praca-goit/_scss/style.scss */
+html {
+  font-size: 14px;
+}
+
+/* line 118, ../praca-goit/_scss/style.scss */
+.welcome__container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 2fr 3fr 4fr;
+  background-image: linear-gradient(to bottom, rgba(186, 105, 105, 0.8), rgba(238, 214, 137, 0.8)), url("../eagle2.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+/* line 131, ../praca-goit/_scss/style.scss */
+.welcome__container > div {
+  border: 2px solid white;
+  justify-self: center;
+  align-self: start;
+  height: 10%;
+  width: 10%;
+  font-family: 'Passion One', cursive;
+}
+
+/* line 141, ../praca-goit/_scss/style.scss */
+.welcome__container .navbar__container {
+  height: 1fr;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 60%;
+  margin: 0 auto;
+  align-content: center;
+  justify-content: center;
+}
+
+/* line 150, ../praca-goit/_scss/style.scss */
+.welcome__container .navbar__container .navbar__logo {
+  display: grid;
+  align-content: center;
+  justify-content: start;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
+/* line 159, ../praca-goit/_scss/style.scss */
+.welcome__container .navbar__container .navbar__options__container {
+  display: grid;
+  grid-auto-flow: column;
+  align-content: center;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+}
+
+/* line 167, ../praca-goit/_scss/style.scss */
+.welcome__container .navbar__container .navbar__options__container .navbar__options {
+  margin-left: 50px;
+  grid-column: span 1;
+  height: 100%;
+}
+
+/* line 172, ../praca-goit/_scss/style.scss */
+.welcome__container .navbar__container .navbar__options__container .navbar__options img {
+  height: 20px;
+  filter: invert(81%) sepia(100%) saturate(0%) hue-rotate(154deg) brightness(108%) contrast(101%);
+}
+
+/* line 181, ../praca-goit/_scss/style.scss */
+.welcome__container .navbar__container .navbar__options__container .navbar__options:hover {
+  border-bottom: 2px solid;
+  color: #fce58a;
+}
+
+/* line 186, ../praca-goit/_scss/style.scss */
+.welcome__container .navbar__container .navbar__options__container img:hover {
+  filter: invert(95%) sepia(28%) saturate(7379%) hue-rotate(306deg) brightness(122%) contrast(98%);
+}
+
+/* line 200, ../praca-goit/_scss/style.scss */
+.welcome__container h1 {
+  display: grid;
+  align-content: end;
+  justify-content: center;
+  font-size: 4rem;
+  font-family: 'Caveat', cursive;
+  font-weight: 500;
+}
+
+/* line 211, ../praca-goit/_scss/style.scss */
+.welcome__container h2 {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  font-size: 9rem;
+  text-align: center;
+  color: white;
+  font-family: 'Passion One', cursive;
+}
+
+/* line 222, ../praca-goit/_scss/style.scss */
+.welcome__container div {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+/* line 233, ../praca-goit/_scss/style.scss */
+.services__container {
+  height: 50vh;
+  width: 60%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 1fr 3fr 8fr;
+  grid-row-gap: 5px;
+  margin: 40px auto 0 auto;
+}
+
+/* line 248, ../praca-goit/_scss/style.scss */
+.services__container .services__options__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 20px;
+  align-content: center;
+  justify-content: center;
+}
+
+/* line 261, ../praca-goit/_scss/style.scss */
+.services__container .services__options__container .services__option {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+}
+
+/* line 266, ../praca-goit/_scss/style.scss */
+.services__container .services__options__container .services__option img {
+  height: 44px;
+  grid-row: span 2;
+  align-content: center;
+  filter: invert(84%) sepia(48%) saturate(246%) hue-rotate(111deg) brightness(94%) contrast(89%);
+}
+
+/* line 274, ../praca-goit/_scss/style.scss */
+.services__container .services__options__container .services__option h3 {
+  grid-column: span 2;
+  display: grid;
+  align-content: start;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  display: grid;
+  justify-content: start;
+}
+
+/* line 286, ../praca-goit/_scss/style.scss */
+.services__container .services__options__container .services__option span {
+  grid-column: span 2;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  color: #b1b1b1;
+}
+
+/* line 304, ../praca-goit/_scss/style.scss */
+.team__container {
+  height: 90vh;
+  width: 60%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 1fr 2fr 2fr 9fr;
+  grid-row-gap: 5px;
+  margin: 40px auto 0 auto;
+}
+
+/* line 313, ../praca-goit/_scss/style.scss */
+.team__container h2 {
+  color: #b1b1b1;
+  text-align: center;
+}
+
+/* line 318, ../praca-goit/_scss/style.scss */
+.team__container .team {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 40px;
+  align-content: center;
+  justify-content: center;
+}
+
+/* line 327, ../praca-goit/_scss/style.scss */
+.team__container .team .team__person {
+  display: grid;
+  grid-template-rows: 9fr 1fr 0.5fr;
+  align-content: center;
+}
+
+/* line 332, ../praca-goit/_scss/style.scss */
+.team__container .team .team__person .photo__1 {
+  background-image: url("../photo1.jpg");
+  background-size: cover;
+  background-position: 10%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-auto-flow: column;
+}
+
+/* line 346, ../praca-goit/_scss/style.scss */
+.team__container .team .team__person .photo__1:hover {
+  background-image: linear-gradient(to bottom, rgba(186, 105, 105, 0.8), rgba(238, 214, 137, 0.8)), url("../photo1.jpg");
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-auto-flow: column;
+}
+
+/* line 356, ../praca-goit/_scss/style.scss */
+.team__container .team .team__person .photo__1:hover .photo__icon {
+  display: grid;
+}
+
+/* line 364, ../praca-goit/_scss/style.scss */
+.team__container .team .team__person .photo__2 {
+  background-image: url("../photo2.jpg");
+  background-size: cover;
+  background-position: 10%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-auto-flow: column;
+}
+
+/* line 375, ../praca-goit/_scss/style.scss */
+.team__container .team .team__person .photo__2:hover {
+  background-image: linear-gradient(to bottom, rgba(186, 105, 105, 0.8), rgba(238, 214, 137, 0.8)), url("../photo2.jpg");
+}
+
+/* line 380, ../praca-goit/_scss/style.scss */
+.team__container .team .team__person .photo__2:hover .photo__icon {
+  display: grid;
+}
+
+/* line 388, ../praca-goit/_scss/style.scss */
+.team__container .team .team__person .photo__3 {
+  background-image: url("../photo3.jpg");
+  background-size: cover;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-auto-flow: column;
+}
+
+/* line 399, ../praca-goit/_scss/style.scss */
+.team__container .team .team__person .photo__3:hover {
+  background-image: linear-gradient(to bottom, rgba(186, 105, 105, 0.8), rgba(238, 214, 137, 0.8)), url("../photo3.jpg");
+}
+
+/* line 404, ../praca-goit/_scss/style.scss */
+.team__container .team .team__person .photo__3:hover .photo__icon {
+  display: grid;
+}
+
+/* line 410, ../praca-goit/_scss/style.scss */
+.team__container .team .team__person .photo__icon {
+  height: 50px;
+  width: 50px;
+  display: none;
+  background: #fce38a;
+  justify-content: center;
+  align-content: center;
+  border-left: 1px solid #f38181;
+}
+
+/* line 420, ../praca-goit/_scss/style.scss */
+.team__container .team .team__person .photo__icon img {
+  height: 40px;
+  filter: invert(76%) sepia(24%) saturate(6720%) hue-rotate(311deg) brightness(105%) contrast(94%);
+}
+
+/* line 427, ../praca-goit/_scss/style.scss */
+.team__container .team .team__person .photo__icon:nth-child(1) {
+  border-left: none;
+}
+
+/* line 432, ../praca-goit/_scss/style.scss */
+.team__container .team .team__person .photo__icon:hover {
+  box-shadow: none;
+  background: #f38181;
+}
+
+/* line 436, ../praca-goit/_scss/style.scss */
+.team__container .team .team__person .photo__icon:hover img {
+  filter: invert(81%) sepia(100%) saturate(0%) hue-rotate(154deg) brightness(108%) contrast(101%);
+}
+
+/* line 445, ../praca-goit/_scss/style.scss */
+.team__container .team .team__person div:hover {
+  box-shadow: 12px 9px 0px -1px #95e1d3;
+}
+
+/* line 450, ../praca-goit/_scss/style.scss */
+.team__container .team .team__person p {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+}
+
+/* line 458, ../praca-goit/_scss/style.scss */
+.team__container .team .team__person span {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  color: #b1b1b1;
+}
+
+/* line 472, ../praca-goit/_scss/style.scss */
+.footer__container {
+  height: 10vh;
+  width: 60%;
+  margin: 40px auto 0 auto;
+  border-top: 1px solid #b1b1b1;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+/* line 484, ../praca-goit/_scss/style.scss */
+.footer__container p,
+.footer__container span {
+  display: grid;
+  align-content: center;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 900;
+}
+
+/* line 493, ../praca-goit/_scss/style.scss */
+.footer__container span {
+  display: contents;
+  color: #f18585;
+}
+
+/* line 498, ../praca-goit/_scss/style.scss */
+.footer__container .footer__subscribe {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+}
+
+/* line 505, ../praca-goit/_scss/style.scss */
+.footer__container .footer__subscribe input {
+  height: 90%;
+  border: 1px solid #b1b1b1;
+  padding-left: 10px;
+}
+
+/* line 512, ../praca-goit/_scss/style.scss */
+.footer__container .footer__subscribe button {
+  background-color: #95e1d3;
+  color: white;
+  border: none;
+  height: 35px;
+  font-family: 'Passion One', cursive;
+}
+
+/* line 529, ../praca-goit/_scss/style.scss */
+title {
+  display: grid;
+  justify-content: center;
+  align-items: end;
+  font-size: 2rem;
+  font-family: 'Caveat', cursive;
+  font-weight: 700;
+}
+
+/* line 538, ../praca-goit/_scss/style.scss */
+h1,
+h3 {
+  display: grid;
+  justify-content: center;
+  align-items: start;
+  font-size: 2.5rem;
+  font-family: 'Passion One', cursive;
+}
+
+/* line 548, ../praca-goit/_scss/style.scss */
+h1::after {
+  position: absolute;
+  content: '';
+  height: 3px;
+  bottom: -123px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 10%;
+  background: #f27f7f;
+}
+
+/* line 560, ../praca-goit/_scss/style.scss */
+.h1_second::before {
+  position: absolute;
+  content: '';
+  height: 3px;
+  margin: 45px auto;
+  left: 0;
+  right: 0;
+  width: 10%;
+  background: #f27f7f;
+}
+
+@media (max-width: 1138px) {
+  /* line 580, ../praca-goit/_scss/style.scss */
+  .services__container {
+    height: unset;
+  }
+  /* line 583, ../praca-goit/_scss/style.scss */
+  .services__container .services__options__container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  /* line 589, ../praca-goit/_scss/style.scss */
+  .team__container {
+    grid-template-rows: 1fr 2fr 2fr 19fr;
+    height: 160vh;
+  }
+  /* line 595, ../praca-goit/_scss/style.scss */
+  .team__container .team {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 100px;
+    grid-row-gap: 20px;
+  }
+}
+
+@media (max-width: 784px) {
+  /* line 611, ../praca-goit/_scss/style.scss */
+  .services__container .services__options__container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-row-gap: 30px;
+  }
+  /* line 618, ../praca-goit/_scss/style.scss */
+  h1::after {
+    bottom: -180px;
+  }
+  /* line 621, ../praca-goit/_scss/style.scss */
+  .team__container {
+    grid-template-rows: 1fr 2fr 2fr 19fr;
+    height: 160vh;
+  }
+  /* line 627, ../praca-goit/_scss/style.scss */
+  .team__container .team {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 100px;
+    grid-row-gap: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* line 638, ../praca-goit/_scss/style.scss */
+  .team__container .team .team__person .photo__1 {
+    background-image: url("../photo1-md.jpg");
+  }
+  /* line 642, ../praca-goit/_scss/style.scss */
+  .team__container .team .team__person .photo__2 {
+    background-image: url("../photo2-md.jpg");
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
