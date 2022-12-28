@@ -123,7 +123,7 @@ html {
   height: 100vh;
   display: grid;
   grid-template-rows: 1fr 2fr 3fr 4fr;
-  background-image: linear-gradient(to bottom, rgba(186, 105, 105, 0.8), rgba(238, 214, 137, 0.8)), url("../eagle2.jpg");
+  background-image: linear-gradient(to bottom, rgba(186, 105, 105, 0.8), rgba(238, 214, 137, 0.8)), url("eagle2.jpg");
   background-size: cover;
   background-position: center;
   color: white;
@@ -315,7 +315,7 @@ html {
 
 /* line 332, ../praca-goit/_scss/style.scss */
 .team__container .team .team__person .photo__1 {
-  background-image: url("../photo1.jpg");
+  background-image: url("photo1.jpg");
   background-size: cover;
   background-position: 10%;
   display: grid;
@@ -326,7 +326,7 @@ html {
 
 /* line 346, ../praca-goit/_scss/style.scss */
 .team__container .team .team__person .photo__1:hover {
-  background-image: linear-gradient(to bottom, rgba(186, 105, 105, 0.8), rgba(238, 214, 137, 0.8)), url("../photo1.jpg");
+  background-image: linear-gradient(to bottom, rgba(186, 105, 105, 0.8), rgba(238, 214, 137, 0.8)), url("photo1.jpg");
   display: grid;
   justify-content: center;
   align-content: center;
@@ -340,7 +340,7 @@ html {
 
 /* line 364, ../praca-goit/_scss/style.scss */
 .team__container .team .team__person .photo__2 {
-  background-image: url("../photo2.jpg");
+  background-image: url("photo2.jpg");
   background-size: cover;
   background-position: 10%;
   display: grid;
@@ -351,7 +351,7 @@ html {
 
 /* line 375, ../praca-goit/_scss/style.scss */
 .team__container .team .team__person .photo__2:hover {
-  background-image: linear-gradient(to bottom, rgba(186, 105, 105, 0.8), rgba(238, 214, 137, 0.8)), url("../photo2.jpg");
+  background-image: linear-gradient(to bottom, rgba(186, 105, 105, 0.8), rgba(238, 214, 137, 0.8)), url("photo2.jpg");
 }
 
 /* line 380, ../praca-goit/_scss/style.scss */
@@ -361,7 +361,7 @@ html {
 
 /* line 388, ../praca-goit/_scss/style.scss */
 .team__container .team .team__person .photo__3 {
-  background-image: url("../photo3.jpg");
+  background-image: url("photo3.jpg");
   background-size: cover;
   display: grid;
   justify-content: center;
@@ -371,7 +371,7 @@ html {
 
 /* line 399, ../praca-goit/_scss/style.scss */
 .team__container .team .team__person .photo__3:hover {
-  background-image: linear-gradient(to bottom, rgba(186, 105, 105, 0.8), rgba(238, 214, 137, 0.8)), url("../photo3.jpg");
+  background-image: linear-gradient(to bottom, rgba(186, 105, 105, 0.8), rgba(238, 214, 137, 0.8)), url("photo3.jpg");
 }
 
 /* line 404, ../praca-goit/_scss/style.scss */
@@ -585,11 +585,11 @@ h1::after {
 @media (max-width: 1024px) {
   /* line 638, ../praca-goit/_scss/style.scss */
   .team__container .team .team__person .photo__1 {
-    background-image: url("../photo1-md.jpg");
+    background-image: url("photo1-md.jpg");
   }
   /* line 642, ../praca-goit/_scss/style.scss */
   .team__container .team .team__person .photo__2 {
-    background-image: url("../photo2-md.jpg");
+    background-image: url("photo2-md.jpg");
   }
 }
 
